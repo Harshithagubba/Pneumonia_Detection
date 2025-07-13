@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: pneumonia-detection-app
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app.py
+    env: 
+      - key: PYTHON_VERSION
+        value: 3.10.10
